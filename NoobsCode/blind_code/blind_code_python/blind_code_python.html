@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../blind_code.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <title>Blind Code</title>
+</head>
+<body>
+    <section class="main-container">
+        <canvas id="canvas"></canvas>
+        
+        <div class="display">
+            <div class="text-area">
+                <textarea name="write" id="write" cols="69" rows="30" onpaste="return false" ondrop="return false" autocomplete="off" readonly></textarea>
+            </div>
+            <div class="code-area">
+                <div class="timer">
+                    <div id="minutes">00</div>
+                    <div id="seperator"> : </div>
+                    <div id="seconds">10</div>
+                </div>
+                <div class="code">
+                    
+                </div>
+            </div>
+        </div>
+        
+        <center>
+            <button type="button" class="submit-button" onclick="check()">Submit</button>
+            <button type="button" class="start-button" onclick="start()">Start</button>
+        </center>
+        
+        <div id="pop-up">
+            <div id="pop">
+
+            </div>
+            <br>
+            <center><button type="button" class="try-again-button" onclick="tryAgain()">Try Again</button></center>
+        </div>
+
+        <div class="inputs">
+            <input id="minute" type="tel" size="1" value="02">
+            <div id="seperator"> : </div>
+            <input id="second" type="tel" size="1" value="00">
+        </div>
+        
+        <div class="rules">
+            <div class="heading">
+                <center> - - - - - How To Play - - - - - 
+                    ______________________________________
+                </center>
+            </div>
+            1. When you hit the start button, the screen will be divided into two half.
+            <br>
+            <br>
+            2. Code will be displayed on the right half of the screen.
+            <br>
+            <br>
+            3. You have to write the code on the left half of the screen.
+            <br>
+            <br>
+            4. While you are writing the code, you will not be able to see what you are writing since, the writing area will be pitch black.
+            <br>
+            <br>
+            5. You will have 2 minutes to finish writing the code. <br> (You can change the timer by clicking on it).
+            <br>
+            <br>
+            6. Once you are done, click on the submit button to submit your code and to see your results.
+            <br>
+            <br>
+            7. If you are not able to finish within the given time, once the timer hits <br> 00 : 00, it will automatically submit your code.
+            <br>
+            <br>
+            <center>Enjoy Yourself.....</center>
+        </div>
+
+        <div class="compiler">
+            <div class="compile">
+                In Blind_Code_Python.py
+                <br>
+                <br>
+            </div>
+            <center><button type="button" class="try-again-button" onclick="tryAgain()">Try Again</button></center>
+        </div>
+    </section>
+    <script src="blind_code_python.js"></script>
+    <script src="../../script.js"></script>
+</body>
+</html>

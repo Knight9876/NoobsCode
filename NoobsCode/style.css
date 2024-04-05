@@ -1,0 +1,106 @@
+* {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    align-items: center;
+    text-align: center;
+}
+
+.h, .sh, .header, .sub-header {
+    font-family: 'Berkshire Swash', cursive;
+}
+
+.h, .sh, .sub-header, .header, .start-button, button, input {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 7rem;
+    transform: translate(-50%, -260%);
+    /* background-image: linear-gradient(to right, ); */
+}
+
+.header, .sub-header, .start-button, .h, .sh, button, input {
+    animation-name: increaseOpacity;
+    animation-duration: 5s;
+}
+
+.header, .sub-header, .start-button {
+    animation-delay: 3300ms;
+}
+
+.header, .h {
+    display: flex;
+}
+
+.header-half-1st, .sub-header-half-2nd {
+    color: yellow;
+}
+
+.header-half-2nd, .sub-header-half-1st {
+    color: lime;
+}
+
+.sub-header, .sh {
+    font-size: 1.3rem;
+    transform: translate(-50%, -900%);
+}
+
+.start-button, .c-button, .java-button, .python-button, .javascript-button, .scramble-code-button, .blind-code-button, .bug-in-the-code-button {
+    background-image: linear-gradient(to right, red, yellow, red);
+    color: black;
+    font-weight: bolder;
+    font-size: 2rem;
+    transform: translate(-50%, -50%);
+    padding: 1rem 3rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    font-family: 'Croissant One', cursive;
+}
+
+.c-button {
+    transform: translate(-124%, -50%);
+    padding: 1rem 6.1rem;
+}
+
+.java-button {
+    transform: translate(-2%, -50%);
+    padding: 1rem 6.2rem;
+}
+
+.python-button {
+    transform: translate(-124%, 100%);
+}
+
+.javascript-button {
+    transform: translate(-2%, 100%);
+}
+
+.blind-code-button {
+    transform: translate(-50%, -50%);
+    /* padding: 1rem 5rem; */
+}
+
+.scramble-code-button {
+    transform: translate(-50%, 100%);
+}
+
+.bug-in-the-code-button {
+    transform: translate(-50%, 100%);
+    padding: 1rem 4.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+@keyframes increaseOpacity {
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}

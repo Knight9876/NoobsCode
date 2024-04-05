@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bug_in_the_code.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <title>Scramble Code</title>
+</head>
+<body>
+    <section class="main-container">
+        <canvas id="canvas"></canvas>
+
+        <textarea name="write" id="write" readonly></textarea>
+        
+        <center>
+            <button type="button" class="submit-button" onclick="check()">Submit</button>
+            <button type="button" class="start-button" onclick="start()">Start</button>
+        </center>
+        
+        <div id="pop-up">
+            <div id="pop">
+
+            </div>
+            <br>
+            <center><button type="button" class="try-again-button" onclick="tryAgain()">Try Again</button></center>
+        </div>
+        
+        <div class="timer">
+            <div id="minutes">00</div>
+            <div id="seperator"> : </div>
+            <div id="seconds">10</div>
+        </div>
+
+        <div class="inputs">
+            <input id="minute" type="tel" size="1" value="02">
+            <div id="seperator"> : </div>
+            <input id="second" type="tel" size="1" value="00">
+        </div>
+    </section>
+    <script src="scramble_code_python.js"></script>
+    <script src="../../script.js"></script>
+</body>
+</html>
