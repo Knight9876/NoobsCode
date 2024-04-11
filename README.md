@@ -1,5 +1,5 @@
 # Welcome to NoobsCode!
-CodeQuest is an innovative gaming website designed to make learning how to code an enjoyable and interactive experience. With its user-friendly interface and engaging gameplay, users can enhance their coding skills while having fun.
+NoobsCode is an innovative gaming website designed to make learning how to code an enjoyable and interactive experience. With its user-friendly interface and engaging gameplay, users can enhance their coding skills while having fun.
 
 # Modes:
 1. Blind Code:
